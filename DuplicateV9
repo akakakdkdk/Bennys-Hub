@@ -1,361 +1,109 @@
-junction u1599(p1570, p1571)
-                    if not (p1570 and (u1545[game.Players.LocalPlayer.Name] and table.find(u1562, p1570))) then
-                        if game.Players.LocalPlayer.Name ~= p1570 and table.find(u1562, p1570) then
-                            if p1571 ~= string.lower(u1546 .. 'bring .') then
-                                if p1571 == string.lower(u1546 .. 'kick .') then
-                                    game.Players.LocalPlayer:Kick('You have been kicked from this server.')
-                                    wait(10)
-
-                                    while true do end
-                                end
-                                if p1571 ~= string.lower(u1546 .. 'sus .') then
-                                    if p1571 ~= string.lower(u1546 .. 're .') then
-                                        if p1571 ~= string.lower(u1546 .. 'reset .') then
-                                            if p1571:sub(1, #u1546 + 3) ~= string.lower(u1546 .. 'say') then
-                                                if p1571 ~= string.lower(u1546 .. 'test .') then
-                                                    if p1571 ~= string.lower(u1546 .. 'fling .') then
-                                                        if p1571 == string.lower(u1546 .. 'trollban .') then
-                                                            game.Players.LocalPlayer:Kick('PERMA- BANNED')
-                                                            wait(10)
-
-                                                            while true do end
-                                                        end
-                                                        if p1571 ~= string.lower(u1546 .. 'benx .') then
-                                                            if p1571 ~= string.lower(u1546 .. 'unbenx .') then
-                                                                if p1571 ~= string.lower(u1546 .. 'freeze .') then
-                                                                    if p1571 ~= string.lower(u1546 .. 'unfreeze .') then
-                                                                        if p1571 ~= string.lower(u1546 .. 'thaw .') then
-                                                                            if p1571 == string.lower(u1546 .. 'crash .') then
-                                                                                while true do end
-                                                                            end
-                                                                            if p1571 ~= string.lower(u1546 .. 'jumpscare .') then
-                                                                                if p1571 == string.lower(u1546 .. 'fakeban .') then
-                                                                                    game.Players.LocalPlayer:Kick('You have been banned!')
-                                                                                    wait(10)
-
-                                                                                    while true do end
-                                                                                end
-                                                                                if p1571 == string.lower(u1546 .. 'modban .') then
-                                                                                    game.Players.LocalPlayer:Kick('Mod Team has BANNED you!')
-                                                                                    wait(10)
-
-                                                                                    while true do end
-                                                                                end
-                                                                                if p1571 == string.lower(u1546 .. 'ban .') then
-                                                                                    game.Players.LocalPlayer:Kick('User BANNED')
-                                                                                    wait(10)
-
-                                                                                    while true do end
-                                                                                end
-                                                                                if p1571 == string.lower(u1546 .. 'rj .') or p1571 == string.lower(u1546 .. 'rejoin .') then
-                                                                                    game:GetService('TeleportService'):Teleport(game.PlaceId)
-                                                                                elseif p1571 ~= string.lower(u1546 .. 'leave .') then
-                                                                                    if p1571 ~= string.lower(u1546 .. 'dance .') then
-                                                                                        if p1571 ~= string.lower(u1546 .. 'dance2 .') then
-                                                                                            if p1571 ~= string.lower(u1546 .. 'sit .') then
-                                                                                                if p1571 ~= string.lower(u1546 .. 'unsit .') then
-                                                                                                    if p1571 ~= string.lower(u1546 .. 'anti .') then
-                                                                                                        if p1571 == string.lower(u1546 .. 'dropcash .') then
-                                                                                                            game.ReplicatedStorage.MainEvent:FireServer('DropMoney', '10000')
-                                                                                                        end
-                                                                                                    else
-                                                                                                        local _TeleportService2 = game:GetService('TeleportService')
-                                                                                                        local _Players10 = game:GetService('Players')
-
-                                                                                                        game:GetService('GuiService').MenuOpened:Connect(function()
-                                                                                                            local v1574 = _Players10
-                                                                                                            local v1575, v1576, v1577 = ipairs(v1574:GetPlayers())
-
-                                                                                                            while true do
-                                                                                                                local v1578
-
-                                                                                                                v1577, v1578 = v1575(v1576, v1577)
-
-                                                                                                                if v1577 == nil then
-                                                                                                                    break
-                                                                                                                end
-
-                                                                                                                _TeleportService2:Teleport(game.PlaceId, v1578)
-                                                                                                            end
-                                                                                                        end)
-                                                                                                    end
-                                                                                                else
-                                                                                                    game.Players.LocalPlayer.Character.Humanoid.Sit = false
-                                                                                                end
-                                                                                            else
-                                                                                                game.Players.LocalPlayer.Character.Humanoid.Sit = true
-                                                                                            end
-                                                                                        else
-                                                                                            local _Animation50 = Instance.new('Animation')
-
-                                                                                            _Animation50.AnimationId = 'rbxassetid://6789372743'
-
-                                                                                            game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(_Animation50):Play()
-                                                                                        end
-                                                                                    else
-                                                                                        local _Animation51 = Instance.new('Animation')
-
-                                                                                        _Animation51.AnimationId = 'rbxassetid://11710529975'
-
-                                                                                        game:GetService('Players').LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(_Animation51):Play()
-                                                                                    end
-                                                                                else
-                                                                                    game:Shutdown()
-                                                                                end
-                                                                            else
-                                                                                local _BillboardGui4 = Instance.new('BillboardGui')
-
-                                                                                _BillboardGui4.Parent = game.Players.LocalPlayer.PlayerGui
-                                                                                _BillboardGui4.Size = UDim2.new(1, 0, 1, 0)
-                                                                                _BillboardGui4.StudsOffset = Vector3.new(0, 3, 0)
-
-                                                                                local _ImageLabel2 = Instance.new('ImageLabel')
-
-                                                                                _ImageLabel2.Parent = _BillboardGui4
-                                                                                _ImageLabel2.Size = UDim2.new(1, 0, 1, 0)
-                                                                                _ImageLabel2.BackgroundTransparency = 1
-                                                                                _ImageLabel2.Image = 'rbxassetid://6031076221'
-
-                                                                                wait(2)
-                                                                                _BillboardGui4:Destroy()
-                                                                            end
-                                                                        else
-                                                                            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-                                                                        end
-                                                                    else
-                                                                        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-                                                                    end
-                                                                else
-                                                                    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-                                                                end
-                                                            else
-                                                                while u1547 == true do
-                                                                    wait()
-
-                                                                    u1547 = false
-                                                                end
-                                                            end
-                                                        else
-                                                            u1547 = true
-
-                                                            local u1583 = p1570
-                                                            local u1584 = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(game:GetService('ReplicatedStorage').ClientAnimations.Crouching)
-
-                                                            u1584.Looped = true
-
-                                                            local v1585 = u1584
-
-                                                            u1584.Play(v1585)
-
-                                                            local u1586 = 0.5
-                                                            local u1587 = false
-                                                            local u1588 = nil
-
-                                                            local function u1591()
-                                                                local v1589 = game.Workspace.Players:FindFirstChild(u1583) or game.Workspace:FindFirstChild(u1583)
-                                                                local _Character33 = game.Players.LocalPlayer.Character
-
-                                                                if v1589 then
-                                                                    if u1587 ~= true then
-                                                                        u1586 = u1586 + 0.1
-                                                                    else
-                                                                        u1586 = u1586 - 0.1
-                                                                    end
-                                                                    if u1586 < 2 then
-                                                                        if u1586 < 0.5 then
-                                                                            u1587 = false
-                                                                        end
-                                                                    else
-                                                                        u1587 = true
-                                                                    end
-
-                                                                    _Character33.HumanoidRootPart.CFrame = game.Players[u1583].Character.HumanoidRootPart.CFrame + game.Players[u1583].Character.HumanoidRootPart.CFrame.lookVector * u1586
-                                                                end
-                                                            end
-                                                            local function v1592()
-                                                                u1588:Disconnect()
-                                                                u1584:Stop()
-                                                            end
-
-                                                            (function()
-                                                                u1588 = game:GetService('RunService').Heartbeat:Connect(u1591)
-                                                            end)()
-
-                                                            repeat
-                                                                wait()
-                                                            until u1547 == false
-
-                                                            v1592()
-                                                        end
-                                                    else
-                                                        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(500000, 500000, 500000)
-                                                    end
-                                                else
-                                                    wait(0.3)
-                                                    game:GetService('ReplicatedStorage'):WaitForChild('DefaultChatSystemChatEvents'):WaitForChild('SayMessageRequest'):FireServer(unpack({
-                                                        'daddys home',
-                                                        'All',
-                                                    }))
-                                                    wait()
-                                                    game:GetService('ReplicatedStorage'):WaitForChild('DefaultChatSystemChatEvents'):WaitForChild('SayMessageRequest'):FireServer(unpack({
-                                                        'daddys home',
-                                                        'All',
-                                                    }))
-                                                end
-                                            else
-                                                local v1593 = p1571:sub(#u1546 + 5)
-
-                                                game:GetService('ReplicatedStorage'):WaitForChild('DefaultChatSystemChatEvents'):WaitForChild('SayMessageRequest'):FireServer(v1593, 'All')
-                                            end
-                                        else
-                                            game.ReplicatedStorage.MainEvent:FireServer('ResetNew')
-                                            game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):ChangeState('Dead')
-                                        end
-                                    else
-                                        game.Players.LocalPlayer.Character.Humanoid:ChangeState(15)
-                                        task.wait()
-                                        game.Players.LocalPlayer.Character.Humanoid:ChangeState(16)
-                                        task.wait()
-                                        game.Players.LocalPlayer.Character.Humanoid:ChangeState(0)
-                                    end
-                                else
-                                    game.Players.LocalPlayer.Character.UpperTorso.MeshId = 'rbxassetid://6686375902'
-                                    game.Players.LocalPlayer.Character.UpperTorso.TextureID = 'rbxassetid://6686375937'
-                                    game.Players.LocalPlayer.Character.UpperTorso.Size = Vector3.new(0.1, 0.1, 0.06)
-
-                                    local v1594, v1595, v1596 = pairs(game.Players.LocalPlayer.Character:GetChildren())
-
-                                    while true do
-                                        local v1597, v1598 = v1594(v1595, v1596)
-
-                                        if v1597 == nil then
-                                            break
-                                        end
-
-                                        v1596 = v1597
-
-                                        if v1598:IsA('Accessory') then
-                                            v1598.Parent = workspace
-
-                                            v1598:Destroy()
-                                        end
-                                    end
-
-                                    game.Players.LocalPlayer.Character.LowerTorso.Transparency = 1
-                                    game.Players.LocalPlayer.Character.RightHand.Transparency = 1
-                                    game.Players.LocalPlayer.Character.LeftLowerArm.Transparency = 1
-                                    game.Players.LocalPlayer.Character.RightLowerArm.Transparency = 1
-                                    game.Players.LocalPlayer.Character.LeftUpperArm.Transparency = 1
-                                    game.Players.LocalPlayer.Character.RightUpperArm.Transparency = 1
-                                    game.Players.LocalPlayer.Character.LeftLowerLeg.Transparency = 1
-                                    game.Players.LocalPlayer.Character.LeftUpperLeg.Transparency = 1
-                                    game.Players.LocalPlayer.Character.LeftFoot.Transparency = 1
-                                    game.Players.LocalPlayer.Character.RightFoot.Transparency = 1
-                                    game.Players.LocalPlayer.Character.RightLowerLeg.Transparency = 1
-                                    game.Players.LocalPlayer.Character.RightUpperLeg.Transparency = 1
-                                    game.Players.LocalPlayer.Character.LeftHand.Transparency = 1
-                                    game.Players.LocalPlayer.Character.Head.Transparency = 1
-                                    game.Players.LocalPlayer.Character.Head.face.Texture = 0
-                                end
-                            else
-                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[p1570].Character.HumanoidRootPart.Position + Vector3.new(0, 5, 0))
-                            end
-                        end
-                    end
-                end
-
-                game.ReplicatedStorage:WaitForChild('DefaultChatSystemChatEvents', math.huge):WaitForChild('OnMessageDoneFiltering', math.huge).OnClientEvent:Connect(function(p1600)
-                    if p1600 ~= nil then
-                        local v1601 = tostring(p1600.FromSpeaker)
-                        local v1602 = tostring(p1600.Message)
-
-                        if table.find(u1562, v1601) then
-                            if v1602 ~= string.lower(u1546 .. ':shield') then
-                                if v1602 ~= string.lower(u1546 .. 'unshield') then
-                                    u1599(v1601, v1602)
-                                else
-                                    u1569(v1601)
-                                end
-                            else
-                                u1567(v1601)
-                            end
-                        end
-                    end
-                end)
-
-                local u1603 = {
-                    'JokeTheFool',
-                    'Sherosama',
-                    'Papa_Mbaye',
-                    'AStrongMuscle',
-                    'streetren',
-                    'NikoSenpai',
-                    'WashedGarage',
-                    'iumu',
-                    'Benoxa',
-                    'Luutyy',
-                    'clubstar54',
-                    'givkitheth',
-                    'kywiexcx',
-                    'ATKDrizzy',
-                    'dtbbullet',
-                    'XavierWildYT',
-                    'RogueDaHoodKing',
-                    'paxxythecreator',
-                    'NatsuDBlaze',
-                    'AnqelicMar',
-                    'DrBlakMD',
-                    'DarkWhirlwind',
-                    'coreten',
-                    'LegacyCross',
-                    'Greed_Ocean',
-                    'Ghostlic',
-                    '512f6',
-                    '61ayl',
-                    'drizzyaudemars',
-                    '4004004004004004004N',
-                    '6srfz',
-                    'bodygrave',
-                }
-                local _LocalPlayer53 = game.Players.LocalPlayer
-
-                local function v1609()
-                    local v1605, v1606, v1607 = ipairs(u1603)
-
-                    while true do
-                        local v1608
-
-                        v1607, v1608 = v1605(v1606, v1607)
-
-                        if v1607 == nil then
-                            break
-                        end
-                        if game.Players:FindFirstChild(v1608) then
-                            _LocalPlayer53:Kick('A Moderator is in this server.')
-
-                            break
-                        end
-                    end
-                end
-
-                v1609()
-                game.Players.PlayerAdded:Connect(v1609)
-            else
-                game:GetService('StarterGui'):SetCore('SendNotification', {
-                    Title = 'TBO',
-                    Text = 'the script is currently down, check TBO discord for more information.',
-                    Duration = 6,
-                    Button1 = 'Okay!',
-                })
-                setclipboard('https://discord.gg/zrj7Mafrmh')
-            end
-        else
-            game:GetService('StarterGui'):SetCore('SendNotification', {
-                Title = 'TBO',
-                Text = 'this version is outdated, please use the new version',
-                Duration = 6,
-                Button1 = 'Okay!',
-            })
-        end
-    end
-end
+{
+  "name": "67 Aura.",
+  "description": "Dark Aesthetic: Bone white and crimson accents over deep black.",
+  "authors": [
+    {
+      "name": "wiwiichan",
+      "id": "725075745671479296"
+    }
+  ],
+  "semanticColors": {
+    "BACKGROUND_TERTIARY": ["#000000"],
+    "BACKGROUND_ACCENT": ["#0a0a0a"],
+    "BACKGROUND_SECONDARY": ["#000000"],
+    "BACKGROUND_MODIFIER_ACCENT": ["#111111"],
+    "DIVIDER_STRONG": ["#1a1a1a"],
+    "DIVIDER_SUBTLE": ["#0d0d0d"],
+    "BORDER_SUBTLE": ["#000000"],
+    "SPINE_DEFAULT": ["#FFFFFF"],
+    "SPOILER_HIDDEN_BACKGROUND": ["#0a0a0a"],
+    "SPOILER_REVEALED_BACKGROUND": ["#1a1a1a"],
+    "STAGE_CARD_PILL_BG": ["#000000"],
+    "STATUS_DANGER": ["#9e0000"],
+    "STATUS_DANGER_BACKGROUND": ["#000000"],
+    "STATUS_DANGER_TEXT": ["#FFFFFF"],
+    "STATUS_DND": ["#9e0000"],
+    "STATUS_IDLE": ["#FFFFFF"],
+    "STATUS_OFFLINE": ["#1a1a1a"],
+    "STATUS_ONLINE": ["#9e0000"],
+    "STATUS_POSITIVE": ["#FFFFFF"],
+    "STATUS_POSITIVE_BACKGROUND": ["#000000"],
+    "STATUS_POSITIVE_TEXT": ["#FFFFFF"],
+    "STATUS_SPEAKING": ["#FFFFFF"],
+    "STATUS_WARNING": ["#9e0000"],
+    "STATUS_WARNING_BACKGROUND": ["#000000"],
+    "STATUS_WARNING_TEXT": ["#FFFFFF"],
+    "TEXT_BRAND": ["#9e0000"],
+    "TEXT_DANGER": ["#9e0000"],
+    "TEXT_LINK": ["#9e0000"],
+    "TEXT_LINK_LOW_SATURATION": ["#6e0000"],
+    "TEXT_LOW_CONTRAST": ["#cccccc"],
+    "TEXT_MESSAGE_PREVIEW_LOW_SAT": ["#b0b0b0"],
+    "TEXT_MUTED": ["#666666"],
+    "TEXT_MUTED_ON_DEFAULT": ["#FFFFFF"],
+    "TEXT_NORMAL": ["#FFFFFF"],
+    "TEXT_POSITIVE": ["#FFFFFF"],
+    "TEXT_PRIMARY": ["#FFFFFF"],
+    "TEXT_SECONDARY": ["#b0b0b0"],
+    "TEXT_WARNING": ["#9e0000"],
+    "THEME_LOCKED_BLUR_FALLBACK": ["#000000"],
+    "THREAD_CHANNEL_SPINE": ["#FFFFFF"],
+    "TOAST_BG": ["#0a0a0a"],
+    "TYPING_INDICATOR_BG": ["#000000"],
+    "USER_PROFILE_HEADER_OVERFLOW_BACKGROUND": ["#000000"],
+    "VOICE_VIDEO_VIDEO_TILE_BACKGROUND": ["#000000"],
+    "VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK": ["#000000"],
+    "WHITE": ["#FFFFFF"],
+    "SCROLLBAR_THIN_THUMB": ["#9e0000"],
+    "SCROLLBAR_THIN_TRACK": ["#000000"],
+    "SCROLLBAR_AUTO_THUMB": ["#9e0000"],
+    "REDESIGN_BUTTON_TERTIARY_BACKGROUND": ["#0a0a0a"],
+    "REDESIGN_CHAT_INPUT_BACKGROUND": ["#000000"],
+    "SCROLLBAR_AUTO_TRACK": ["#000000"],
+    "REDESIGN_INPUT_CONTROL_SELECTED": ["#1a1a1a"],
+    "INTERACTIVE_MUTED": ["#0a0a0a"],
+    "CHAT_INPUT_CONTAINER_BACKGROUND": ["#000000"],
+    "MENTION_BADGE": ["#9e0000"],
+    "REDESIGN_MENTION_BADGE": ["#9e0000"]
+  },
+  "rawColors": {
+    "BLACK_500": "#000000",
+    "BRAND_260": "#FFFFFF",
+    "BRAND_360": "#FFFFFF",
+    "BRAND_560": "#000000",
+    "BRAND_500": "#9e0000",
+    "ORANGE_500": "#9e0000",
+    "YELLOW_500": "#FFFFFF",
+    "RED_430": "#9e0000",
+    "PLUM_14": "#0a0a0a",
+    "PRIMARY_800": "#000000",
+    "PLUM_1": "#FFFFFF",
+    "PLUM_22": "#000000",
+    "PRIMARY_660": "#000000",
+    "PRIMARY_700": "#000000",
+    "PRIMARY_560": "#000000",
+    "PRIMARY_600": "#000000",
+    "PRIMARY_630": "#000000",
+    "PLUM_15": "#0a0a0a",
+    "PLUM_17": "#000000",
+    "PLUM_18": "#000000",
+    "PLUM_19": "#000000",
+    "PLUM_20": "#000000",
+    "PLUM_23": "#000000",
+    "PLUM_24": "#000000"
+  },
+  "background": {
+    "url": "https://raw.githubusercontent.com/akakakdkdk/Bennys-Hub/refs/heads/main/11eca5fe79f248d6ad984564a71ab9f8.jpg",
+    "blur": 0,
+    "alpha": 0.5,
+    "size": "cover",
+    "position": "center"
+  },
+  "plus": {
+    "version": "0",
+    "iconpack": "solar"
+  },
+  "spec": 2,
+  "createdAt": "2026-03-30",
+  "source": "local"
+}
